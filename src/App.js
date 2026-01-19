@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Users, UserPlus, Trash2, Edit, Search, RefreshCw, DollarSign, FolderPlus, Folder } from 'lucide-react';
+import React, { useState } from 'react';
+import { Users, UserPlus, Trash2, Edit, Search, RefreshCw, FolderPlus, Folder } from 'lucide-react';
 
 const PaperCutAdmin = () => {
   const [config, setConfig] = useState({
@@ -11,7 +11,6 @@ const PaperCutAdmin = () => {
   const [groups, setGroups] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedUser, setSelectedUser] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState('');
   const [connectionStatus, setConnectionStatus] = useState('disconnected'); // disconnected, connecting, connected, error
